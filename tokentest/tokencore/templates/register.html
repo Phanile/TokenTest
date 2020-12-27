@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Регистрация</title>
+    </head>
+    <body>
+        <form action="{% url 'register' %}">
+            {% csrf_token %}
+            <label for="firstname">Имя</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="lastname">Фамилия</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+            <label for="referral">Реферальный код</label>
+            <input type="text" name="referral" id="referral">
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </body>
+</html>

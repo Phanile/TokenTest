@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/', include('djoser.urls')),
     path('api/authToken/', include('djoser.urls.authtoken')),
+    path('', include('tokencore.urls')),
 ]

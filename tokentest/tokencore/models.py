@@ -18,6 +18,7 @@ class Profile(models.Model):
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     mobile_phone = models.CharField(max_length=10)
+    email = models.EmailField(default='1@gmail.com')
 
     created_at = models.DateField()
     last_login = models.DateField()
